@@ -39,13 +39,4 @@ try:
        logging.info(f"{me.first_name} 𝚂𝚃𝙰𝚁𝚃𝙴𝙳 ⚡️⚡️⚡️")
            
 
-STRING:
-    apps = [Client2,bot]
-    for app in apps:
-        app.start()
-    idle()
-    for app in apps:
-        app.stop())
-    
-else:
-    bot.run()
+bot.run()
