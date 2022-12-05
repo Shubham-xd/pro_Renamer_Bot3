@@ -39,7 +39,7 @@ try:
        logging.info(f"{me.first_name} 𝚂𝚃𝙰𝚁𝚃𝙴𝙳 ⚡️⚡️⚡️")
            
 
-if STRING(
+if STRING
     apps = [Client2,bot]
     for app in apps:
         app.start()
