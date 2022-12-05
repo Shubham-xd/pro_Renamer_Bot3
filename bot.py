@@ -8,9 +8,6 @@ from plugins.web_support import web_server
 
 from plugins.cb_data import app as Client2
 
-logging.config.fileConfig('logging.conf')
-logging.getLogger().setLevel(logging.INFO)
-logging.getLogger("pyrogram").setLevel(logging.ERROR)
 
 TOKEN = os.environ.get("TOKEN", "")
 
