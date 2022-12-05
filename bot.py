@@ -1,6 +1,10 @@
+import logging
+import logging.config
 import asyncio
 from pyrogram import Client, compose,idle
-import os
+import os 
+from aiohttp import web
+from plugins.web_support import web_server
 
 from plugins.cb_data import app as Client2
 
@@ -11,6 +15,8 @@ API_ID = int(os.environ.get("API_ID", ""))
 API_HASH = os.environ.get("API_HASH", "")
 
 STRING = os.environ.get("STRING", "")
+
+PORT = os.envirom.get("PORT", "")
 
 
 bot = Client(
