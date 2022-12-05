@@ -1,5 +1,3 @@
-import logging
-import logging.config
 import asyncio
 from pyrogram import Client, compose,idle
 import os 
