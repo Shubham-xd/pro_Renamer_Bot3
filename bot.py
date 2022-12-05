@@ -24,6 +24,13 @@ bot = Client(
            api_hash=API_HASH,
 
            plugins=dict(root='plugins'))
+
+try:
+       app = web.AppRunner(await web_server())
+       await app.setup()
+       bind_address = "0.0.0.0"
+       await web.TCPSite(app, bind_address, PORT).start()
+       logging.info(f"{me.first_name} 𝚂𝚃𝙰𝚁𝚃𝙴𝙳 ⚡️⚡️⚡️")
            
 
 if STRING:
