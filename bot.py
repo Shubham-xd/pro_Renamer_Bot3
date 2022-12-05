@@ -32,6 +32,7 @@ bot = Client(
 
            plugins=dict(root='plugins'))
 
+
 try:
        app = web.AppRunner(await web_server())
        await app.setup()
